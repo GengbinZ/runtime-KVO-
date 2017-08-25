@@ -15,6 +15,8 @@
 		0972F2A21F4FB52500865A83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0972F2A01F4FB52500865A83 /* LaunchScreen.storyboard */; };
 		0972F2AD1F4FB52500865A83 /* runtime_KVO___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0972F2AC1F4FB52500865A83 /* runtime_KVO___Tests.m */; };
 		0972F2B81F4FB52500865A83 /* runtime_KVO___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0972F2B71F4FB52500865A83 /* runtime_KVO___UITests.m */; };
+		0972F2C71F4FB55500865A83 /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 0972F2C61F4FB55500865A83 /* NSObject+KVO.m */; };
+		0972F2CD1F4FB65500865A83 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0972F2CC1F4FB65500865A83 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		0972F2B31F4FB52500865A83 /* runtime-KVO自定义UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "runtime-KVO自定义UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0972F2B71F4FB52500865A83 /* runtime_KVO___UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "runtime_KVO___UITests.m"; sourceTree = "<group>"; };
 		0972F2B91F4FB52500865A83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0972F2C51F4FB55500865A83 /* NSObject+KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVO.h"; sourceTree = "<group>"; };
+		0972F2C61F4FB55500865A83 /* NSObject+KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVO.m"; sourceTree = "<group>"; };
+		0972F2CB1F4FB65500865A83 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		0972F2CC1F4FB65500865A83 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				0972F2A01F4FB52500865A83 /* LaunchScreen.storyboard */,
 				0972F2A31F4FB52500865A83 /* Info.plist */,
 				0972F2921F4FB52500865A83 /* Supporting Files */,
+				0972F2C51F4FB55500865A83 /* NSObject+KVO.h */,
+				0972F2C61F4FB55500865A83 /* NSObject+KVO.m */,
+				0972F2CB1F4FB65500865A83 /* Person.h */,
+				0972F2CC1F4FB65500865A83 /* Person.m */,
 			);
 			path = "runtime-KVO自定义";
 			sourceTree = "<group>";
@@ -273,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0972F2C71F4FB55500865A83 /* NSObject+KVO.m in Sources */,
 				0972F29A1F4FB52500865A83 /* ViewController.m in Sources */,
+				0972F2CD1F4FB65500865A83 /* Person.m in Sources */,
 				0972F2971F4FB52500865A83 /* AppDelegate.m in Sources */,
 				0972F2941F4FB52500865A83 /* main.m in Sources */,
 			);
@@ -426,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = "runtime-KVO自定义/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zst.a.runtime-KVO---";
@@ -437,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = "runtime-KVO自定义/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zst.a.runtime-KVO---";
